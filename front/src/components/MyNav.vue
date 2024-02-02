@@ -31,7 +31,6 @@
         </v-navigation-drawer>
         <v-main style="height: 250px">
             <div>
-                barra
                 <v-toolbar>
                     <v-badge dot inline>
                         <v-avatar>
@@ -55,29 +54,26 @@
 
                 <div>
                     chat
-                    <!-- <div>
-                        <v-container>
-                            <v-row justify="center">
-                                <v-col cols="8">
-                                    <v-chat>
-                                        <v-chat-message v-for="(message, index) in messages" :key="index"
-                                            :color="message.isCurrentUser ? 'primary' : 'grey lighten-3'"
-                                            :mine="message.isCurrentUser">
-                                            {{ message.text }}
-                                        </v-chat-message>
-                                    </v-chat>
-                                    <v-text-field v-model="newMessage" @keydown.enter.prevent="sendMessage"
-                                        placeholder="Type your message..."></v-text-field>
-                                </v-col>
-                            </v-row>
-                        </v-container>
-                    </div> -->
                     <v-alert icon="$vuetify" text="Hi"></v-alert>
+                    <v-spacer></v-spacer>
+                    <v-spacer></v-spacer>
+                    <v-alert icon="mdi-acoount" text="Hello"></v-alert>
                     <div>
-                        <v-text-field clearable size="small" label="Type your message..." variant="outlined"></v-text-field>
-                        <v-icon icon="mdi-microphone"></v-icon>
-                        <v-icon icon="mdi-attachment"></v-icon>
-                        <v-btn>Send</v-btn>
+                        <v-text-field clearable label="Type your message..." prepend-icon="mdi-account"
+                            apend-icon="mdi-send">
+                            <v-icon icon="mdi-microphone"></v-icon>
+                            <v-icon icon="mdi-attachment"></v-icon>
+                        </v-text-field>
+                        <!-- <v-text-field v-model="message" :append-icon="message ? 'mdi-send' : 'mdi-microphone'"
+                            :append-inner-icon="marker ? 'mdi-map-marker' : 'mdi-map-marker-off'" :prepend-icon="icon"
+                            variant="filled" clear-icon="mdi-close-circle" clearable label="Message" type="text"
+                            @click:append-inner="toggleMarker" @click:append="sendMessage" @click:prepend="changeIcon"
+                            @click:clear="clearMessage"></v-text-field> -->
+                        <!-- <v-text-field clearable label="Type your message..." prepend-icon="$vuetify">
+                            <v-icon icon="mdi-microphone"></v-icon>
+                            <v-icon icon="mdi-attachment"></v-icon>
+                            <v-btn>Send</v-btn>
+                        </v-text-field> -->
                     </div>
 
                 </div>
@@ -86,37 +82,6 @@
     </v-layout>
 </template>
 
-<script setup>
+<script>
 //
-// export default {
-//     data() {
-//         return {
-//             messages: [
-//                 { text: "Hello", isCurrentUser: false },
-//                 { text: "Hi there!", isCurrentUser: true },
-//             ],
-//             newMessage: "",
-//         };
-//     },
-//     methods: {
-//         sendMessage() {
-//             if (this.newMessage.trim() === "") return;
-
-//             this.messages.push({
-//                 text: this.newMessage,
-//                 isCurrentUser: true,
-//             });
-
-//             setTimeout(() => {
-//                 this.messages.push({
-//                     text: "Received your message!",
-//                     isCurrentUser: false,
-//                 });
-//             }, 500);
-
-//             this.newMessage = "";
-//         },
-//     },
-// };
-
 </script>
