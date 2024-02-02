@@ -1,11 +1,13 @@
 <template>
   <v-app>
     <v-main>
-      <HelloWorld />
+      <!-- <HelloWorld /> -->
+      <!-- <MyCard></MyCard> -->
+      <MyNav></MyNav>
     </v-main>
   </v-app>
 </template>
 
 <script setup>
-  //
+//
 </script>
