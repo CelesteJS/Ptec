@@ -1,10 +1,8 @@
 <template>
   <v-app>
-    <v-main>
-      <!-- <HelloWorld /> -->
-      <!-- <MyCard></MyCard> -->
-      <MyNav></MyNav>
-    </v-main>
+    <!-- <HelloWorld /> -->
+    <!-- <MyCard></MyCard> -->
+    <MyNav></MyNav>
   </v-app>
 </template>
 
